@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="form">
+        Name: <input id="name">
+        Description: <textarea id="description"></textarea>
+        Price: <input id="price" type="number">
+        <button id="includesButton">Includes Product</button>
+    </section>
+    <hr />
+    Search: <input type="text" id="searchInput">
+    <button id="searchButton">Search</button>
+    <hr />
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Editar</th>
+                <th>Apagar</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="modalProduct" class="modal">
+        <div class="modal-content">
+            <span id="closeProduct" class="close">&times;</span>
+            <p id="modalProductId"></p>
+            <p id="modalProductName"></p>
+            <p id="modalProductDescription"></p>
+            <p id="modalProductPrice"></p>
+        </div>
+    </div>
+
+    <div id="modalEdit" class="modal">
+        <div class="modal-content">
+            <span id="closeEdit" class="close">&times;</span>
+            <h2>Edit</h2>
+            <input type="hidden" id="modalEditProductId">
+            <label for="modalEditProductName">Name:</label>
+            <input type="text" id="modalEditProductName">
+            <br />
+            <label for="modalEditProductDescription">Description:</label>
+            <textarea id="modalEditProductDescription"></textarea>
+            <br />
+            <label for="modalEditProductPrice">Price:</label>
+            <input type="number" id="modalEditProductPrice">
+            <br />
+            <button id="saveEditButton">Save</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

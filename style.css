@@ -1,0 +1,37 @@
+body{
+    padding: 12px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+table{
+    text-align: center;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.modal {
+    padding: 20px;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
